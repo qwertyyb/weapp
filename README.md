@@ -22,7 +22,7 @@
 This is a project template for [vue-cli](https://github.com/vuejs/vue-cli).
 
 ``` bash
-$ vue init @qwertyyb/weapp-template demo  # Create a new project based on this template
+$ vue init qwertyyb/weapp-template demo  # Create a new project based on this template
 $ cd demo               # Navigate into your new project folder
 $ npm run open                 # open wechatdevtools
 ```
