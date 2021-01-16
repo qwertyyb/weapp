@@ -1,0 +1,65 @@
+<view class="page-account flex flex-col items-center bg-lightgray h-screen">
+  <div class="header bg-white flex items-center w-full">
+    <open-data class="account-avatar border-rounded flex" type="userAvatarUrl"></open-data>
+    <view class="account-info flex flex-col justify-center">
+      <navigator class="account-nickname-wrapper flex items-end"
+        url="./update-info?infoType=name">
+        <view class="account-nickname color-333 fonts-40 fontw-800"
+          wx:if="\{{realInfo.real_name}}">
+          \{{ realInfo.real_name }}
+        </view>
+        <open-data type="userNickName"
+          wx:else
+          class="account-nickname color-333 fonts-40 fontw-800">
+        </open-data>
+        <image class="account-edit-icon" src="/images/edit.png"></image>
+      </navigator>
+      <navigator class="account-phone-wrapper flex items-end"
+        url="./update-info?infoType=phone">
+        <view class="account-phone color-666 fonts-24">
+          \{{ realInfo.phone }} 
+        </view>
+        <image class="account-edit-icon" src="/images/edit.png"></image>
+      </navigator>
+    </view>
+  </div>
+  <view class="menu w-full bg-white round-20 color-666 fonts-30">
+    <navigator class="info-item flex items-center"
+      url="/pages/account/update-info?infoType=patient">
+      <image class="info-icon" src="/images/patient-menu.png"
+        mode="widthFix"></image>
+      <view class="info-label">诊断信息</view>
+      <image class="info-more-icon"
+        src="/images/arrow-right.png"
+        mode="widthFix"></image>
+    </navigator>
+    <navigator class="info-item flex items-center"
+      url="/pages/account/update-info?infoType=interest">
+      <image class="info-icon" src="/images/interest-menu.png"
+        mode="widthFix"></image>
+      <view class="info-label">兴趣标签</view>
+      <image class="info-more-icon"
+        src="/images/arrow-right.png"
+        mode="widthFix"></image>
+    </navigator>
+    <navigator class="info-item flex items-center"
+      url="/pages/account/update-info?infoType=address">
+      <image class="info-icon" src="/images/address-menu.png"
+        mode="widthFix"></image>
+      <view class="info-label">收货地址</view>
+      <image class="info-more-icon"
+        src="/images/arrow-right.png"
+        mode="widthFix"></image>
+    </navigator>
+    <navigator class="info-item flex items-center"
+      bindtap="showDevelopingTip"
+      url="/pages/account/order/order-list-ff">
+      <image class="info-icon" src="/images/order-menu.png"
+        mode="widthFix"></image>
+      <view class="info-label">我的订单</view>
+      <image class="info-more-icon"
+        src="/images/arrow-right.png"
+        mode="widthFix"></image>
+    </navigator>
+  </view>
+</view>

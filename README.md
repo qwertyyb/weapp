@@ -1,32 +1,28 @@
-# vue-simple-boilerplate
+# 小程序模板
 
-> The simplest possible Vue setup in a single HTML file
+> 小程序初始化项目模板
 
-> This template is Vue 2.0 compatible. For Vue 1.x use this command: `vue init simple#1.0 my-project`
+### 功能
 
-### Before You Start...
-
-This boilerplate is targeted at beginners who want to start exploring Vue without the distraction of a complicated development environment.
-
-For advanced features such as asset compilation, hot-reload, lint-on-save, unit testing, and CSS extraction, we recommend that more experienced developers use one of the [other templates](https://github.com/vuejs-templates/).
+集成以下能力: 
+1. wx接口promise化 (miniprogram-api-promise)
+2. 全局store (redux, redux-logger)
+3. connect.Page, connect.Component
+4. 增强富文本能力: (mp-html)
+5. computed、watch (miniprogram-computed)
+6. eventBus支持 (eventemitter3)
+7. eslint支持 （airbnb规范）
+8. npm script支持 (open, build-npm, open)
+9. ramda函数库
+10. 以洋葱模型封装了wx.request
+11. 自定义tabbar
 
 ## Usage
 
 This is a project template for [vue-cli](https://github.com/vuejs/vue-cli).
 
 ``` bash
-$ npm install -g vue-cli      # Install vue-cli if you haven't already
-$ vue init simple my-project  # Create a new project based on this template
-$ cd my-project               # Navigate into your new project folder
-
-$ npm install -g live-server  # Install live-server if you haven't already
-$ live-server                 # Run live-server and open it in your browser
-```
-
-### Fork It And Make Your Own
-
-You can [fork this repo](https://help.github.com/articles/fork-a-repo/) to create your own boilerplate, and use it with `vue-cli`:
-
-``` bash
-vue init username/repo my-project
+$ vue init @qwertyyb/weapp-template demo  # Create a new project based on this template
+$ cd demo               # Navigate into your new project folder
+$ npm run open                 # open wechatdevtools
 ```

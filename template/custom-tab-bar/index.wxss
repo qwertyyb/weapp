@@ -1,0 +1,37 @@
+@import "../common.wxss";
+
+.tab-bar {
+  height: 103rpx;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+.tab-bar-item .tabbar-label {
+  font-size: 11px;
+}
+.tab-bar-item .tabbar-label {
+  margin-top: 6rpx;
+}
+.tab-bar-item:first-child .tabbar-image {
+  width: 44rpx;
+  height: 46rpx;
+}
+.tab-bar-item:nth-child(2) .tabbar-image {
+  width: 47rpx;
+  height: 47rpx;
+}
+.tab-bar-item:nth-child(3) .tabbar-image {
+  width: 52rpx;
+  height: 46rpx;
+}
+.tab-bar-item:nth-child(4) .tabbar-image {
+  width: 56rpx;
+  height: 40rpx;
+}
+.tab-bar-item:last-child .tabbar-image {
+  width: 42rpx;
+  height: 47rpx;
+}

@@ -1,0 +1,21 @@
+:host {
+  background-color: #F9F7F8;
+}
+
+.live-section-title {
+  margin-top: 30rpx;
+}
+.act-section-title {
+  margin-top: 61rpx;  
+}
+
+.act-image {
+  width: 334rpx;
+  height: 197.5rpx;
+}
+.act-name {
+  max-width: 334rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

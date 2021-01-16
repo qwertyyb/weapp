@@ -1,0 +1,43 @@
+/* pages/account/account.wxss */
+.header {
+  padding: 47rpx 31rpx;
+  box-sizing: border-box;
+}
+.account-avatar {
+  width: 130rpx;
+  height: 130rpx;
+  margin-right: 40rpx;
+}
+.account-edit-icon {
+  width: 20rpx;
+  height: 20rpx;
+  margin-left: 12rpx;
+}
+.account-nickname-wrapper,
+.account-phone-wrapper {
+  margin-bottom: 12rpx;
+  line-height: 1;
+}
+
+.menu {
+  margin: 20rpx 30rpx;
+  padding: 5rpx 0;
+  width: 690rpx;
+  height: 605rpx;
+  box-sizing: border-box;
+}
+.menu .info-item {
+  padding: 25rpx 29rpx;
+}
+.info-icon {
+  width: 28rpx;
+  height: 28rpx;
+  margin-right: 30rpx;
+}
+.info-more-icon {
+  width: 15rpx;
+  height: 26rpx;
+}
+.info-label {
+  margin-right: auto;
+}

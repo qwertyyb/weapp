@@ -1,0 +1,32 @@
+{
+  "name": "wechat-mp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "eventemitter3": "^4.0.7",
+    "miniprogram-api-promise": "^1.0.4",
+    "miniprogram-computed": "^2.2.0",
+    "mp-html": "^2.0.0",
+    "ramda": "^0.27.1",
+    "redux-logger": "^3.0.6"
+  },
+  "devDependencies": {
+    "eslint": "^7.18.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "execa": "^5.0.0",
+    "miniprogram-ci": "^1.0.94"
+  },
+  "scripts": {
+    "npm": "node ./build.js build-npm",
+    "open": "node ./build.js open",
+    "preview": "node ./build.js preview",
+    "lint": "eslint --ext .js --quiet pages behaviors/ components/ custom-tab-bar/ service/ store/ utils/ app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

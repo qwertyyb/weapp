@@ -1,0 +1,6 @@
+<view class="badge">
+  <view class="content">
+    <slot></slot>
+  </view>
+  <view class="badge-value color-white bg-orange border-rounded text-center">{{value}}</view>
+</view>
