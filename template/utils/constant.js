@@ -1,2 +1,2 @@
 // 接口地址
-exports.apiBaseUrl = 'https://example.com/';
+exports.apiBaseUrl = 'https://localhost:3000/';
